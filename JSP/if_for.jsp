@@ -41,13 +41,25 @@
     	
     	（2）for循环：获取数组，collection对象中的数据：<br />
     	2.1获取数组中的数据<br />
+    	<!---->
     	<c:forEach var="x" varStatus="status" items="${pageScope.pnumList}">
-			num${status.index}=${x}<br />
+    		<ul>
+    			<c:choose>
+    				<c:when test="${status.count%2==0}">
+    					<li>num${status.index}=${x}<br /></li>
+    				</c:when>
+    				<c:otherwise>
+    					<li style="color: red; font-size: 20px;">num${status.index}=${x}<br /></li> 
+    				</c:otherwise>
+    			</c:choose>
+    		</ul>			
 		</c:forEach>
     	
     	2.2获取collection对象中的数据:
     	<c:forEach var="y" varStatus="status" items="${pageScope.sList}">
     		num${status.index}=${y}<br />
     	</c:forEach>
+    	
+    	
  	</body>
 </html>
