@@ -8,16 +8,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-    	<c:choose>
-    		<c:when test="${1>63}">
-    			1<3
-    		</c:when>
-    		<c:when test="${1>2}">
-    			1>2
-    		</c:when>
-    		<c:otherwise>
-    			error!!!
-    		</c:otherwise>
-    	</c:choose>
+		<ul>
+			<li><a href="JSP/">JSP</a></li>
+		</ul>
  	</body>
 </html>

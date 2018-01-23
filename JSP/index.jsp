@@ -8,16 +8,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-    	<c:choose>
-    		<c:when test="1<3">
-    			1<3
-    		</c:when>
-    		<c:when test="1>2">
-    			1>2
-    		</c:when>
-    		<c:otherwise>
-    			error!!!
-    		</c:otherwise>
-    	</c:choose>
+		<ul>
+			<li><a href="Test01.jsp">逻辑语句测试</a></li>
+		</ul>
  	</body>
 </html>
